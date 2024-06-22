@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KushCobar.lk</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./kush-logo.ico" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const items = document.querySelectorAll('.category-item');
+    
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          } else {
+            entry.target.classList.remove('visible');
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+    
+      items.forEach(item => {
+        observer.observe(item);
+      });
+    });
+    </script>
+    
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-search">
+        <input type="search" name="search" placeholder="Search Product..." class="input-field">
+
+        <button class="search-btn" aria-label="Search">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/kushco.jpg" alt="Casmart logo" width="180" height="31">
+      </a>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label">Sign in</p>
+        </button>
+
+        <button class="header-action-btn">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label">Search</p>
+        </button>
+
+
+        <button class="header-action-btn">
+          <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+          <p class="header-action-label">Wishlisht</p>
+
+          <div class="btn-badge" aria-hidden="true">2</div>
+        </button>
+
+      </div>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/kushco.jpg" alt="Casmart logo" width="130" height="31">
+          </a>
+
+          <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Store</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <video autoplay muted loop playsinline class="hero-video">
+          <source src="./assets/videos/kush.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="container">
+
+          <div class="hero-content">
+
+            
+
+            <h2 class="h1 hero-title">Don't Panic !   
+              It's Organic </h2>
+
+              <p class="hero-subtitle">KushCobar CMB</p>
+            <button class="btn btn-primary">Store</button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service">
+        <div class="container">
+
+          <ul class="service-list">
+
+           
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="./assets/images/service-icon-2.svg" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title">Easy Returns</p>
+
+                <p class="service-item-text">30 Day Returns Policy</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="./assets/images/service-icon-3.svg" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title">Secure Payment</p>
+
+                <p class="service-item-text">100% Secure Gaurantee</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="./assets/images/service-icon-4.svg" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title">Special Support</p>
+
+                <p class="service-item-text">24/7 Dedicated Support</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category">
+        <div class="container">
+
+          <ul class="category-list">
+
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="./assets/images/14.jpg" alt="Womens" loading="lazy" width="510" height="600"
+                  class="w-100">
+              </figure>
+
+              <a href="#" class="btn btn-secondary">Women</a>
+            </li>
+
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="./assets/images/sudda 2.jpg" alt="Mens" loading="lazy" width="510" height="600"
+                  class="w-100">
+              </figure>
+
+              <a href="#" class="btn btn-secondary">Men</a>
+            </li>
+
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="./assets/images/chula.jpg" alt="summer wear" loading="lazy" width="510" height="600"
+                  class="w-100">
+              </figure>
+
+              <a href="#" class="btn btn-secondary">Gym Wears</a>
+            </li>
+
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="./assets/images/cap.jpg" alt="Sport Cap" loading="lazy" width="510" height="600"
+                  class="w-100">
+              </figure>
+
+              <a href="#" class="btn btn-secondary">Sport Caps</a>
+            </li>
+
+         
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="./assets/images/gim.jpg" alt="summer wear" loading="lazy" width="510" height="600"
+                  class="w-100">
+              </figure>
+
+              <a href="#" class="btn btn-secondary">Summer Wears</a>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PRODUCT
+      -->
+
+      <section class="section product">
+        <div class="container">
+
+          <h2 class="h2 section-title">Welcome to KushCo Store</h2>
+
+          <ul class="filter-list">
+
+           
+
+            <li>
+              <button class="filter-btn">We Don't do walk-ins.Contact us Before you Vist Us.</button>
+            </li>
+
+           
+
+          </ul>
+
+          <ul class="product-list">
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/17.jpg" alt="Varsi Leather Bag" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-badge red"> -25%</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                   
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Long Arm Summer Shirt</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="48.75">LKR 3500.00</data>
+
+                    <data value="65.00">LKR 5000.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/8.jpg" alt="Fit Twill Shirt for Woman" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-badge green"> New</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                  
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Fit Twill Shirt for Woman</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="62.00">LKR 3450.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/7.jpg" alt="Grand Atlantic Chukka Boots" loading="lazy"
+                      width="800" height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                  
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Short Arm Summer Tshirt</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="32.00">LKR 2600.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/18.jpg" alt="Women's Faux-Trim Shirt" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                  
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Kush co Logo Skinny Armcuts</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="84.00">LKR 2100.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/16.jpg" alt="Soft Touch Interlock Polo" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                   
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">KushCo Gym Shorts</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="45.00">LKR 2600.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/15.jpg" alt="Casmart Smart Watch" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Combo Collections</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="30.00">LKR 10000.00</data>
+
+                    <data value="38.00">LKR 8500.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/4.jpg" alt="Casmart Smart Glass" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Cashmere Tshirt For Women</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="25.00">LKR 3800</data>
+
+                    <data value="39.00">LKR 4200</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/10.jpg" alt="Cotton Shirt for Men" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">KushCo Jersey</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="85.00">LKR 3500</data>
+
+                    <data value="99.00">LKR 4300</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/5.jpg" alt="Double-breasted Blazer" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                   
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Tropical Men Shirts</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="32.00">LKR 4650.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/20.jpg" alt="Ribbed Cotton Bodysuits" loading="lazy" width="800"
+                      height="1034" class="w-100">
+                  </a>
+
+                  <div class="card-badge green">New</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Smart Casual For Women</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="71.00">LKR 4700.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-outline">View All Products</button>
+
+         
+
+        </div>
+      </section>
+
+
+     
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog">
+        <div class="container">
+
+          <h2 class="h2 section-title">Latest News</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/album.jpg" alt="Worthy Cyber Monday Fashion From Casmart" loading="lazy"
+                      width="1020" height="700" class="w-100">
+                  </a>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-open-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">Fashion</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">
+                        <time datetime="2021-03-31">28 Sep 2022</time>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Sri Lankan Rap Artist Zany Inzane Collab With  KushCobar Merchandise </a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/lankan.jpg" alt="Unique Ideas for Fashion You Haven’t heard yet"
+                      loading="lazy" width="1020" height="700" class="w-100">
+                  </a>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-open-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">Fashion</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">
+                        <time datetime="2021-03-31">16 May 2019</time>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Lankan AF Merch</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li><li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/danu.jpg" alt="Holiday Home Decoration I’ve Recently Ordered"
+                      loading="lazy" width="1020" height="700" class="w-100">
+                  </a>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-open-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">Fashion</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <a href="#" class="card-meta-link">
+                        <time datetime="2021-03-31">31 january 2018</time>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Danu Featuring KushCo</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="section newsletter">
+        <div class="container">
+
+          <div class="newsletter-card" style="background-image: url('./assets/images/newsletter-bg.png')">
+
+            <h2 class="card-title">Subscribe Newsletter</h2>
+
+            <p class="card-text">
+              Enter your email below to be the first to know about new collections and product launches.
+            </p>
+
+            <form action="" class="card-form">
+
+              <div class="input-wrapper">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <input type="email" name="emal" placeholder="Enter your email" required class="input-field">
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                <span>Subscribe</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+              
+
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/kushco.jpg" alt="Casmart logo" width="180" height="31">
+          </a>
+
+          <p class="footer-text">
+            KushCobar is a fashion theme for presents a complete wardrobe of uniquely crafted Ethnic Wear, Casuals &
+            Accessories inspired from the most contemporary
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/cmbkushco?mibextid=LQQJ4d" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            
+
+            <li>
+              <a href="https://www.instagram.com/cmbkushcobar?igsh=NTc4MTIwNjQ2YQ==" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Information</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Company</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Payment Type</a>
+          </li>
+
+          
+
+          <li>
+            <a href="#" class="footer-link">World Media Partner</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Become an Agent</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Refund Policy</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Category</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Men's Clothing</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Women's Clothing</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Plus Sizes</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Complete Your Look</a>
+          </li>
+
+          
+
+          <li>
+            <a href="#" class="footer-link">Head Wears</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Help & Support</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Dealers & Agents</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ Information</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Return Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping & Delivery</a>
+          </li>
+
+         
+
+          <li>
+            <a href="#" class="footer-link">List of Shops</a>
+          </li>
+
+        </ul>
+
+        
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="#">KushCo</a>. All Rights Reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+          <p class="copyright">
+            Visit Our Showrooms <a href="https://www.google.com/maps/place/KUSH.CO+(Manic+Phase+%26+CMB+Kushcobar+%7C+Kush.co+Life)/@6.9178836,79.9006253,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae25b48704b6eaf:0xb88e3e23ef12768f!8m2!3d6.9178836!4d79.9006253!16s%2Fg%2F11fl9mjf6w?entry=ttu">Dehiwala,Srilanka</a>
+          </p>
+
+          
+        </ul>
+
+        <div class="payment">
+          <p class="payment-title">We Support</p>
+
+          <img src="./assets/images/payment-img.png" alt="Online payment logos" class="payment-img">
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
