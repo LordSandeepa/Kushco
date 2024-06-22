@@ -517,35 +517,16 @@ h3 > a { color: inherit; }
 
 /* Media Queries for Responsiveness */
 
-@media (max-width: 768px) {
-  .hero-video {
-    width: 100%;
-    height: 100%;
-  }
 
-  .hero-content {
-    margin-top: 10%;
-    padding: 0 20px;
-  }
-
-  .hero-title {
-    font-size: 3.7rem; /* Increased font size */
-  }
-
-  .hero-subtitle {
-    font-size: 1rem; /* Increased font size */
-  }
-
-  .hero-button {
-    font-size: 10px;
-    padding: 8px 16px;
-  }
-}
 
 @media (max-width: 480px) {
+  .hero {
+    height: 60vh; /* Ensures the hero section takes the full viewport height */
+  }
+
   .hero-video {
-    width: 80%;
-    height: 80%;
+    width:80%;
+    height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.2); /* Adjust scale for better fit */
@@ -574,41 +555,7 @@ h3 > a { color: inherit; }
   }
 }
 
-@media (max-width: 375px) { /* Specific adjustments for iPhone SE and similar devices */
-  .hero {
-    height: 100vh; /* Ensures the hero section takes the full viewport height */
-  }
 
-  .hero-video {
-    width: 100%;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.5); /* Adjust scale for better fit */
-  }
-
-  .hero-content {
-    margin-top: 25%;
-    padding: 0 10px;
-  }
-
-  .hero-title {
-    font-size:70px;/* Increased font size */
-    margin-top: 5px;
-    margin-bottom: 10px; /* Adjusted for better fit on smaller screens */
-    max-width: 4ch; /* Reduced to fit smaller screens */
-  }
-
-  .hero-subtitle {
-    font-size: 1.2rem; /* Increased font size */
-    margin-bottom: 5px; /* Adjusted for better fit on smaller screens */
-  }
-
-  .hero-button {
-    font-size: 8px; /* Reduced font size */
-    padding: 5px 10px; /* Reduced padding */
-  }
-}
 
 /*-----------------------------------*\
  * #SERVICE
@@ -622,6 +569,7 @@ h3 > a { color: inherit; }
   justify-content: center;
   align-items: center;
   gap: 40px;
+  margin-top: 30px;
 }
 
 .service-item {
