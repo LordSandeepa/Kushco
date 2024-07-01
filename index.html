@@ -85,17 +85,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
       <div class="overlay" data-overlay></div>
 
+      <a href="#" class="logo">
+        <img src="./assets/images/kushco.jpg" alt="Casmart logo" width="200" height="40">
+      </a>
       <div class="header-search">
-        <input type="search" name="search" placeholder="Search Product..." class="input-field">
+        <input type="search" name="search" placeholder="Search Product,Category..." class="input-field">
 
         <button class="search-btn" aria-label="Search">
           <ion-icon name="search-outline"></ion-icon>
         </button>
       </div>
 
-      <a href="#" class="logo">
-        <img src="./assets/images/kushcologo.jpg" alt="Casmart logo" width="200" height="31">
-      </a>
+      
 
       <div class="header-actions">
 
@@ -119,7 +120,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
           <div class="btn-badge" aria-hidden="true">2</div>
         </button>
+        <button class="header-action-btn">
+          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
 
+          <p class="header-action-label">Pay</p>
+
+          
+        </button>
+      
+       
       </div>
 
       <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
@@ -133,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="navbar-top">
 
           <a href="#" class="logo">
-            <img src="./assets/images/kushco.jpg" alt="Casmart logo" width="130" height="31">
+            <img src="./assets/images/kushco.jpg" alt="Casmart logo" width="140" height="40">
           </a>
 
           <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
@@ -163,7 +172,11 @@ document.addEventListener('DOMContentLoaded', function() {
           <li>
             <a href="#" class="navbar-link">Contact</a>
           </li>
-
+          <li>
+            <a href="#" class="navbar-link">What's New</a>
+          </li> <li>
+            <a href="#" class="navbar-link">Showrooms</a>
+          </li>
         </ul>
 
       </nav>
@@ -313,13 +326,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
               <a href="#" class="btn btn-secondary">Summer Wears</a>
             </li>
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="./assets/images/casusal.jpg" alt="summer wear" loading="lazy" width="510" height="600"
+                  class="w-100">
+              </figure>
+
+              <a href="#" class="btn btn-secondary">Casual Wears</a>
+            </li>
+            
           </ul>
 
         </div>
       </section>
 
+     
+      <section class="hero1" id="home">
+        <video autoplay muted loop playsinline class="hero-video">
+          <source src="./assets/videos/5.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="container">
 
-
+          
+        </div>
+      </section>
 
 
       <!-- 
@@ -329,7 +360,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <section class="section product">
         <div class="container">
 
-          <h1 class="h1 section-title">Welcome to KushCo Store</h2>
+         
 
           <ul class="filter-list">
 
@@ -351,7 +382,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <figure class="card-banner">
 
                   <a href="#">
-                    <img src="./assets/images/17.jpg" alt="Varsi Leather Bag" loading="lazy" width="800"
+                    <img src="./assets/images/new/1.jpg" alt="Varsi Leather Bag" loading="lazy" width="800"
                       height="1034" class="w-100">
                   </a>
 
@@ -375,7 +406,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">Long Arm Summer Shirt</a>
+                    <a href="#">Short Arm Summer Shirt</a>
                   </h3>
 
                   <div class="card-price">
@@ -394,7 +425,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <figure class="card-banner">
 
                   <a href="#">
-                    <img src="./assets/images/8.jpg" alt="Fit Twill Shirt for Woman" loading="lazy" width="800"
+                    <img src="./assets/images/new/2.jpg" alt="Fit Twill Shirt for Woman" loading="lazy" width="800"
                       height="1034" class="w-100">
                   </a>
 
@@ -418,7 +449,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">Fit Twill Shirt for Woman</a>
+                    <a href="#">Fit Twill Casual T-Shirt</a>
                   </h3>
 
                   <div class="card-price">
@@ -435,7 +466,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <figure class="card-banner">
 
                   <a href="#">
-                    <img src="./assets/images/7.jpg" alt="Grand Atlantic Chukka Boots" loading="lazy"
+                    <img src="./assets/images/new/3.jpg" alt="Grand Atlantic Chukka Boots" loading="lazy"
                       width="800" height="1034" class="w-100">
                   </a>
 
@@ -457,11 +488,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">Short Arm Summer Tshirt</a>
+                    <a href="#">Long Arm Smart Tshirt</a>
                   </h3>
 
                   <div class="card-price">
-                    <data value="32.00">LKR 2600.00</data>
+                    <data value="32.00">LKR 3600.00</data>
                   </div>
                 </div>
 
@@ -474,7 +505,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <figure class="card-banner">
 
                   <a href="#">
-                    <img src="./assets/images/18.jpg" alt="Women's Faux-Trim Shirt" loading="lazy" width="800"
+                    <img src="./assets/images/new/4.jpg" alt="Women's Faux-Trim Shirt" loading="lazy" width="800"
                       height="1034" class="w-100">
                   </a>
 
@@ -496,11 +527,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">Kush co Logo Skinny Armcuts</a>
+                    <a href="#">Long Arm Summer Shirt</a>
                   </h3>
 
                   <div class="card-price">
-                    <data value="84.00">LKR 2100.00</data>
+                    <data value="84.00">LKR 4100.00</data>
                   </div>
                 </div>
 
@@ -513,7 +544,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <figure class="card-banner">
 
                   <a href="#">
-                    <img src="./assets/images/16.jpg" alt="Soft Touch Interlock Polo" loading="lazy" width="800"
+                    <img src="./assets/images/new/5.jpg" alt="Soft Touch Interlock Polo" loading="lazy" width="800"
                       height="1034" class="w-100">
                   </a>
 
@@ -535,11 +566,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">KushCo Gym Shorts</a>
+                    <a href="#">White Long Arm Shirt</a>
                   </h3>
 
                   <div class="card-price">
-                    <data value="45.00">LKR 2600.00</data>
+                    <data value="45.00">LKR 2700.00</data>
                   </div>
                 </div>
 
@@ -552,7 +583,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <figure class="card-banner">
 
                   <a href="#">
-                    <img src="./assets/images/15.jpg" alt="Casmart Smart Watch" loading="lazy" width="800"
+                    <img src="./assets/images/new/9.jpg" alt="Casmart Smart Watch" loading="lazy" width="800"
                       height="1034" class="w-100">
                   </a>
 
@@ -574,13 +605,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">Combo Collections</a>
+                    <a href="#">Gym Short Men</a>
                   </h3>
 
                   <div class="card-price">
-                    <data value="30.00">LKR 10000.00</data>
+                    <data value="30.00">LKR 1500.00</data>
 
-                    <data value="38.00">LKR 8500.00</data>
+                    <data value="38.00">LKR 2000.00</data>
                   </div>
                 </div>
 
@@ -593,7 +624,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <figure class="card-banner">
 
                   <a href="#">
-                    <img src="./assets/images/4.jpg" alt="Casmart Smart Glass" loading="lazy" width="800"
+                    <img src="./assets/images/new/7.jpg" alt="Casmart Smart Glass" loading="lazy" width="800"
                       height="1034" class="w-100">
                   </a>
 
@@ -614,7 +645,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="card-content">
                   <h3 class="h4 card-title">
-                    <a href="#">Cashmere Tshirt For Women</a>
+                    <a href="#">Cashmere Tshirt For men</a>
                   </h3>
 
                   <div class="card-price">
@@ -633,7 +664,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <figure class="card-banner">
 
                   <a href="#">
-                    <img src="./assets/images/10.jpg" alt="Cotton Shirt for Men" loading="lazy" width="800"
+                    <img src="./assets/images/new/8.jpg" alt="Cotton Shirt for Men" loading="lazy" width="800"
                       height="1034" class="w-100">
                   </a>
 
@@ -668,312 +699,39 @@ document.addEventListener('DOMContentLoaded', function() {
               </div>
             </li>
 
-            <li>
-              <div class="product-card">
+            
 
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/5.jpg" alt="Double-breasted Blazer" loading="lazy" width="800"
-                      height="1034" class="w-100">
-                  </a>
-
-                  <div class="card-actions">
-
-                    <button class="card-action-btn" aria-label="Quick view">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-
-                   
-
-                    <button class="card-action-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h4 card-title">
-                    <a href="#">Tropical Men Shirts</a>
-                  </h3>
-
-                  <div class="card-price">
-                    <data value="32.00">LKR 4650.00</data>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/20.jpg" alt="Ribbed Cotton Bodysuits" loading="lazy" width="800"
-                      height="1034" class="w-100">
-                  </a>
-
-                  <div class="card-badge green">New</div>
-
-                  <div class="card-actions">
-
-                    <button class="card-action-btn" aria-label="Quick view">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-
-
-                    <button class="card-action-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h4 card-title">
-                    <a href="#">Smart Casual For Women</a>
-                  </h3>
-
-                  <div class="card-price">
-                    <data value="71.00">LKR 4700.00</data>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-            <li>
-              <div class="product-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/23.jpg" alt="Ribbed Cotton Bodysuits" loading="lazy" width="800"
-                      height="1034" class="w-100">
-                  </a>
-
-                  <div class="card-badge red">Out Of Stock</div>
-
-                  <div class="card-actions">
-
-                    <button class="card-action-btn" aria-label="Quick view">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-
-
-                    <button class="card-action-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h4 card-title">
-                    <a href="#">Casual Kushco Tshirt For Women</a>
-                  </h3>
-
-                  <div class="card-price">
-                    <data value="71.00">LKR 3450.00</data>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-            <li>
-              <div class="product-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/22.jpg" alt="Ribbed Cotton Bodysuits" loading="lazy" width="800"
-                      height="1034" class="w-100">
-                  </a>
-
-                
-
-                  <div class="card-actions">
-
-                    <button class="card-action-btn" aria-label="Quick view">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-
-
-                    <button class="card-action-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h4 card-title">
-                    <a href="#">Smart Casual For men</a>
-                  </h3>
-
-                  <div class="card-price">
-                    <data value="71.00">LKR 3200.00</data>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-          
-
-          </ul>
-
-          <button class="btn btn-outline">View All Products</button>
-
-         
-
-        </div>
+            
       </section>
 
 
      
+      
+      <section class="hero2" id="home">
+        <video autoplay muted loop playsinline class="hero-video">
+          <source src="./assets/videos/za.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="container">
 
+          <div class="hero2-content">
 
+            
+
+            <h2 class="h2 hero2-title">WE THE LEGACY </h2>
+            <p class="hero2-subtitle">FREAr OF ONE | KUSHCO. LIFE | ZARTAJ CMB</p>
+             
+
+          </div>
+
+        </div>
+      </section>
 
       <!-- 
         - #BLOG
       -->
 
-      <section class="section blog">
-        <div class="container">
-
-          <h2 class="h2 section-title">Latest News</h2>
-
-          <ul class="blog-list">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/album.jpg" alt="Worthy Cyber Monday Fashion From Casmart" loading="lazy"
-                      width="1020" height="700" class="w-100">
-                  </a>
-                </figure>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="folder-open-outline"></ion-icon>
-
-                      <a href="#" class="card-meta-link">Fashion</a>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <a href="#" class="card-meta-link">
-                        <time datetime="2021-03-31">28 Sep 2022</time>
-                      </a>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Sri Lankan Rap Artist Zany Inzane Collab With  KushCobar Merchandise </a>
-                  </h3>
-
-                </div>
-
-              </div>
-            </li>
-
-            
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/lankan.jpg" alt="Unique Ideas for Fashion You Haven’t heard yet"
-                      loading="lazy" width="1020" height="700" class="w-100">
-                  </a>
-                </figure>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="folder-open-outline"></ion-icon>
-
-                      <a href="#" class="card-meta-link">Fashion</a>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <a href="#" class="card-meta-link">
-                        <time datetime="2021-03-31">16 May 2019</time>
-                      </a>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Lankan AF Merch</a>
-                  </h3>
-
-                </div>
-
-              </div>
-            </li><li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/danu.jpg" alt="Holiday Home Decoration I’ve Recently Ordered"
-                      loading="lazy" width="1020" height="700" class="w-100">
-                  </a>
-                </figure>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="folder-open-outline"></ion-icon>
-
-                      <a href="#" class="card-meta-link">Fashion</a>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <a href="#" class="card-meta-link">
-                        <time datetime="2021-03-31">31 january 2018</time>
-                      </a>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Danu Featuring KushCo</a>
-                  </h3>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
+      
 
 
 
@@ -986,9 +744,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
           <div class="newsletter-card" style="background-image: url('./assets/images/newsletter-bg.png')">
 
-            <h2 class="card-title">Subscribe Newsletter</h2>
+            <h2 class="card-title">CONTACT US</h2>
 
-            <p class="card-text">
+            <p class="card-text">We're excited to hear from you! Whether you have a question about our products, an inquiry about your order, or just want to share your thoughts, our team is here to assist you. 
               Enter your email below to be the first to know about new collections and product launches.
             </p>
 
@@ -1001,7 +759,7 @@ document.addEventListener('DOMContentLoaded', function() {
               </div>
 
               <button type="submit" class="btn btn-primary w-100">
-                <span>Subscribe</span>
+                <span>Submit</span>
 
                 <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
               </button>
@@ -1034,7 +792,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="footer-brand">
 
           <a href="#" class="logo">
-            <img src="./assets/images/kushcologo.jpg" alt="Casmart logo" width="180" height="31">
+            <img src="./assets/images/kushko.jpg" alt="Casmart logo" width="180" height="31">
           </a>
 
           <p class="footer-text">
